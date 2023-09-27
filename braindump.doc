@@ -1,1 +1,28 @@
-Testing.
+## App Name
+  Irania: What's for dinner?
+  Nydia: Dish wizard, 
+  Parker: 
+  Robert: 
+
+## Feature list
+01.Search a meal database
+02.selection
+    cooking time
+    protein
+    starch
+    veggie
+    serving size
+    cuisine 
+    save Feature
+    way to exclude meal
+     Swipe left or right to save/discard
+03.Filters
+    meal type
+04. modal to show detailed information
+05. Api spoonacular
+06.API world.openfoodfacts.org
+07.
+08.
+09.
+10.
+
