@@ -8,7 +8,6 @@
       protein - beef, chicken, fish, pork, no protein
       starch - rice, pasta, bread, root vegetables
       vegetable preferences
-      servings
       meal type
       include favorites or try something new
 03. results 
@@ -21,6 +20,7 @@
 05. modal to show detailed information
       recipe information
 06. APIs
+    Walmart
     spoonacular
       recipes
       pricing
@@ -30,12 +30,18 @@
     antique/cream background
     cards
 
+    Meeting schedule
+    M-F 6pm daily
+    Sunday 1pm
+
 
 As a user who wants to identify meals that fit my budget,
 I should be able to enter criteria for my preferences
 so that I can choose from a list of meal options that meet my preference and budget.
 
 =======================================================================
+Archived Notes:
+
       eat out
         cuisine type - refer to documentation on options for dropdown menu
         distance
