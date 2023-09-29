@@ -26,3 +26,8 @@
 09.
 10.
 
+As a user who wants prepare a meal,
+I should be able to select the radio buttons for the type of meal.
+As a user, I should be able to click on the meal to view recipe details.
+As a user, I should be able to save and discard meals for future queries.
+
