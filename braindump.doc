@@ -1,33 +1,67 @@
 ## App Name
-  Irania: What's for dinner?
-  Nydia: Dish wizard, 
-  Parker: 
-  Robert: 
+  FRUGAL DISH WIZARD
 
 ## Feature list
-01.Search a meal database
-02.selection
-    cooking time
-    protein
-    starch
-    veggie
-    serving size
-    cuisine 
-    save Feature
-    way to exclude meal
-     Swipe left or right to save/discard
-03.Filters
-    meal type
-04. modal to show detailed information
-05. Api spoonacular
-06.API world.openfoodfacts.org
-07.
-08.
-09.
-10.
+01.Search a recipe and restaurant database
+02.selection options
+      cuisine - refer to documentation
+      protein - beef, chicken, fish, pork, no protein
+      starch - rice, pasta, bread, root vegetables
+      vegetable preferences
+      meal type
+      include favorites or try something new
+03. results 
+      time    
+04. local storage
+      save favorites
+      save discarded recommendations
+      Swipe left or right to save/discard
+      Thumbs up / thumbs down
+05. modal to show detailed information
+      recipe information
+06. APIs
+    Walmart
+    spoonacular
+      recipes
+      pricing
+07. Aesthetics
+    simple hero picture - possibly from localStorage image unique to user
+    search options within hero picture
+    antique/cream background
+    cards
 
-As a user who wants prepare a meal,
-I should be able to select the radio buttons for the type of meal.
+    Meeting schedule
+    M-F 6pm daily
+    Sunday 1pm
+
+
+As a user who wants to identify meals that fit my budget,
+I should be able to enter criteria for my preferences
+so that I can choose from a list of meal options that meet my preference and budget.
+
+=======================================================================
+Archived Notes:
+
+      eat out
+        cuisine type - refer to documentation on options for dropdown menu
+        distance
+        budget
+        minimum rating
+        is-open
+        sort
+        # of results
+        include favorites or try something new
+
+        As a user who wants to determine what to have for a meal,
+I should be able to choose between dining in or eating out, and provide criteria
+so that I can see what options I have to choose for a meal that meets my needs.
+
+select the radio buttons for eating out or cooking,
+select the type of meal.
 As a user, I should be able to click on the meal to view recipe details.
 As a user, I should be able to save and discard meals for future queries.
 
+     
+
+              eat out
+        general map location - not detailed instruction
