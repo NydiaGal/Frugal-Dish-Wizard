@@ -12,6 +12,7 @@ var SpoonacularApi = require('spoonacular_api');
 var defaultClient = SpoonacularApi.ApiClient.instance;
 // Configure API key authorization: apiKeyScheme
 var apiKeyScheme = defaultClient.authentications['apiKeyScheme'];
+
 apiKeyScheme.apiKey = "9a57136e6bca455b9771d343ad46c043"
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //apiKeyScheme.apiKeyPrefix['x-api-key'] = "Token"
