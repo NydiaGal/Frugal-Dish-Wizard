@@ -1,4 +1,12 @@
 //-Define global variables
+var cuisine ='';
+var protein ='';
+var starch = '';
+var veggies ='';
+var mealType ='';
+var favorite = '';
+var newRecipe='';
+
 //-Function to make api request including api key
 //	-make fetch request
 //-Function to display recipe cards
