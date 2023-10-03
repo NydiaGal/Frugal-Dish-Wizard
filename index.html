@@ -20,17 +20,36 @@
     <section class="protienselections">
         <div class="protienselections body">
             <div class="container">
-                <label for="menu">Select a Protein:</label>
+                <form>
+                    <label for="menu">Select a Protein:</label>
                     <select id="menu">
                         <option value="Chicken">Chicken</option>
                         <option value="Beef">Beef</option>
-                        <option value="Chicken">Chicken</option>
                         <option value="Pork">Pork</option>
                         <option value="Fish">Fish</option>
-                        <option value="Veggies">Vegetables</option>
+                        <option value="Vegetables">Vegetables</option>
                         <option value="Eat Out">Online Ordering</option>
                         //last value option will take us to the online ordering apps
                     </select>
+
+                    <br><br>
+
+                    <label>Choose your protien(s):</label><br>
+                    <input type="radio" id="Chicken" name="radio_chicken" value="chicken">
+                    <label for="Chicken">Chicken</label><br>
+
+                    <input type="radio" id="Beef" name="radio_beef" value="beef">
+                    <label for="Beef">Beef</label><br>
+
+                    <input type="radio" id="Pork" name="radio_pork" value="pork">
+                    <label for="Pork">Pork</label><br>
+
+                    <input type="radio" id="Fish" name="radio_fish" value="fish">
+                    <label for="Fish">Fish</label><br>
+
+                    <input type="radio" id="Vegetables" name="radio_vegetables" value="vegetables">
+                    <label for="Vegetables">Vegetables</label><br>
+                </form>
         </div>
 
     <div class="columns">
