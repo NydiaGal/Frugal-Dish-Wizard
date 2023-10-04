@@ -1,11 +1,11 @@
 //-Define global variables
-var cuisine ='';
-var protein ='';
-var starch = '';
-var veggies ='';
-var mealType ='';
-var favorite = '';
-var newRecipe='';
+// var cuisine ='';
+// var protein ='';
+// var starch = '';
+// var veggies ='';
+// var mealType ='';
+// var favorite = '';
+// var newRecipe='';
 
 var SpoonacularApi = require('spoonacular_api');
 
