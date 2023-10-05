@@ -1,128 +1,92 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Frugal Dish Wizard</title>
-    <link rel="icon" type="image/png" href="./assets/images/Frugal dish wizard logo.jpg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel= "https://api.spoonacular.com/recipes/716429/information?apiKey=9a57136e6bca455b9771d343ad46c043&includeNutrition=true.">
-    <script src="https://kit.fontawesome.com/973a6df201.js" crossorigin="anonymous"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/Frugal dish wizard logo.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/973a6df201.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  
-  <body>
-  <section class="section">
-    <div class="section body">
-        <div class="container">
-            <h1 class="title">Frugal Dish Wizard</h1>
-            <h2 class="subtitle"><strong>Simplifying the way you plan a meal</strong></h2>
-            <h2 class = "quote has-text-centered">Every recipe tells a story, and every dish is a journey. Explore the flavors of life, one recipe at a time.</h2>
-    </div>
 
-    <br><br>
+  <body>
+    <section class="section">
+      <div class="section body">
+        <div class="container has-text-centered">
+          <h1 class="title">Frugal Dish Wizard</h1>
+          <h2 class="subtitle">
+            <strong>Simplifying the way you plan a meal</strong>
+          </h2>
+          <h2 class="quote has-text-centered">
+            Every recipe tells a story, and every dish is a journey. Explore the
+            flavors of life, one recipe at a time.
+          </h2>
+          <img src="assets/images/Lemons.png" />
+        </div>
+      </div>
+    </section>
+    <br /><br />
 
     <section class="protienselections">
-        <div class="protienselections body">
-            <div class="container is-link">
-                <form>
-                    <label for="menu" class="is-size-5">Select a Protein:</label>
-                    <select id="menu" class="is-size-5">
-                        <option value="Chicken">Chicken</option>
-                        <option value="Beef">Beef</option>
-                        <option value="Pork">Pork</option>
-                        <option value="Fish">Fish</option>
-                        <option value="Vegetables">Vegetables</option>
-                        <option value="Eat Out">Online Ordering</option>
-                        //last value option will take us to the online ordering apps
-                    </select>    
-                    <button type="submit">Submit</button>            
-                </form>
+      <div class="protienselections body">
+        <div class="container is-link">
+          <form>
+            <label for="menu" class="is-size-5">Select a Protein:</label>
+            <select id="menu" class="is-size-5">
+              <option value="Chicken">Chicken</option>
+              <option value="Beef">Beef</option>
+              <option value="Pork">Pork</option>
+              <option value="Fish">Fish</option>
+              <option value="Vegetables">Vegetables</option>
+              <option value="Eat Out">Online Ordering</option>
+              //last value option will take us to the online ordering apps
+            </select>
+            <button type="submit">Submit</button>
+          </form>
         </div>
+      </div>
+    </section>
 
-    <br><br>
-        
-    <div class="columns">
-        <div class="column">
-            <div class="card">
-                <div class="card-content">
-                    <h2 class="title">Cauliflower Pizza</h2>
-                        <h3 class="subtitle">Olive Peroni</h3>
-                </div>
-                <footer class="card-footer">
-                    <div class="card-footer-detail">
-                        <a href="#" class="button is-success">
-                            <i class ="fa fa-thumbs-o-up"></i>
-                        </a>
-                    </div>
+    <br /><br />
 
-                    <div class="card-footer-item">
-                        <a href="#" class="button is-danger">
-                            <i class ="fa fa-thumbs-o-down"></i>
-                        </a>
-                    </div>
-
-                    <div class="card-footer-item">
-                        <a href="#" class="button is-info">
-                            <i class ="fa fa-retweet"></i>
-                        </a>
-                    </div>
-                </footer>
+    <div class="columns is-multiline" id="recipe-list">
+      <div id="recipe-list"></div>
+    </div>
+    <div class="title" id="recipeDetails" style="display: none">
+      <h2>Recipe Details</h2>
+      <div id="recipeName"></div>
+      <div id="recipeImage"></div>
+      <div id="recipeInfo"></div>
+      <div id="recipeIngredients"></div>
+      <div id="recipeSteps"></div>
+      <button id="backToListButton">Back to List</button>
     </div>
 
-    <div class="column"></div>
-    <div class="card">
-        <div class="card-content">
-            <h2 class="title">MeatLoaf</h2>
-                <h3 class="subtitle">Moore Carbs</h3>
+    <!-- <div class="card-footer">
+        <div class="card-footer-detail">
+            <a href="#" class="button is-success">
+                <i class ="fa fa-thumbs-o-up"></i>
+            </a>
         </div>
-        <footer class="card-footer">
-            <div class="card-footer-detail">
-                <a href="#" class="button is-success">
-                    <i class ="fa fa-thumbs-o-up"></i>
-                </a>
-            </div>
 
-            <div class="card-footer-item">
-                <a href="#" class="button is-danger">
-                    <i class ="fa fa-thumbs-o-down"></i>
-                </a>
-            </div>
-
-            <div class="card-footer-item">
-                <a href="#" class="button is-info">
-                    <i class ="fa fa-retweet"></i>
-                </a>
-            </div>
-        </footer>
-
-    <div class="column"></div>
-    <div class="card">
-        <div class="card-content">
-            <h2 class="title">Salmon Dill Bake</h2>
-                <h3 class="subtitle">Marine Lyfe</h3>
+        <div class="card-footer-item">
+            <a href="#" class="button is-danger">
+                <i class ="fa fa-thumbs-o-down"></i>
+            </a>
         </div>
-        <footer class="card-footer">
-            <div class="card-footer-detail">
-                <a href="#" class="button is-success">
-                    <i class ="fa fa-thumbs-o-up"></i>
-                </a>
-            </div>
+      
+    </div>  -->
 
-            <div class="card-footer-item">
-                <a href="#" class="button is-danger">
-                    <i class ="fa fa-thumbs-o-down"></i>
-                </a>
-            </div>
-
-            <div class="card-footer-item">
-                <a href="#" class="button is-info">
-                    <i class ="fa fa-retweet"></i>
-                </a>
-            </div>
-        </footer>
-  <script src ="./assets/js/script.js"></script>
-              
-  </section>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
-
