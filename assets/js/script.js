@@ -7,7 +7,8 @@
 //the initial title and image, hover transition for additional info like time, servings and cost per serving, then click on a button to go to the link the recipe was taken from. 
 
 
-var apiKey = ''; //update with your API key
+var apiKey = '1c2767aa27fe422c91f0d1e50285ab87';
+var protein = 'chicken';
 var cuisine = 'Italian'; // this would be populated based on our click event
 var mealType = 'Dinner'; // this would be populated based on our click event
 var ingredients = 'chicken,tomato'; // this would be populated based on our click events for protein, starches and veggies
