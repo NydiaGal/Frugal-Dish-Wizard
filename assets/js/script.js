@@ -8,12 +8,12 @@
 
 
 var apiKey = '1c2767aa27fe422c91f0d1e50285ab87';
-var protein = 'chicken';
-var cuisine = 'Italian'; // this would be populated based on our click event
-var mealType = 'Dinner'; // this would be populated based on our click event
-var ingredients = 'chicken,tomato'; // this would be populated based on our click events for protein, starches and veggies
+var protein = '';
+var cuisine = ''; // this would be populated based on our click event
+var mealType = ''; // this would be populated based on our click event
+var ingredients = ''; // this would be populated based on our click events for protein, starches and veggies
 
-var apiUrl = 'https://api.spoonacular.com/recipes/complexSearch?cuisine=' + cuisine + //having trouble entering the random sort may need to use separate random function
+var apiUrl = 'https://api.spoonacular.com/recipes/complexSearch?sort=random&cuisine=' + cuisine + //having trouble entering the random sort may need to use separate random function
   '&mealType=' + mealType +
   '&includeIngredients=' + ingredients +
   '&apiKey=' + apiKey;
@@ -26,6 +26,7 @@ var apiUrl = 'https://api.spoonacular.com/recipes/complexSearch?cuisine=' + cuis
     var recipeSteps = document.getElementById('recipeSteps');
     var recipeIngredients = document.getElementById('recipeIngredients');
     var backToListButton = document.getElementById('backToListButton');
+    
 
 fetch(apiUrl)
   .then(function(response) {
