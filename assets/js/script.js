@@ -13,6 +13,7 @@ var cuisine = ''; // this would be populated based on our click event
 var mealType = ''; // this would be populated based on our click event
 var ingredients = ''; // this would be populated based on our click events for protein, starches and veggies
 
+
 var apiUrl = 'https://api.spoonacular.com/recipes/complexSearch?sort=random&cuisine=' + cuisine + //having trouble entering the random sort may need to use separate random function
   '&mealType=' + mealType +
   '&includeIngredients=' + ingredients +
@@ -25,8 +26,20 @@ var apiUrl = 'https://api.spoonacular.com/recipes/complexSearch?sort=random&cuis
     var recipeInfo = document.getElementById('recipeInfo');
     var recipeSteps = document.getElementById('recipeSteps');
     var recipeIngredients = document.getElementById('recipeIngredients');
-    var backToListButton = document.getElementById('backToListButton');
+    var backToListButton = document.getElementById('backToListButton');    
+    var objSelect = document.getElementById("protein");
+
+    //Set selected
+    setSelectedValue(objSelect, "10");
     
+    function setSelectedValue(selectObj, valueToSet) {
+        for (var i = 0; i < selectObj.options.length; i++) {
+            if (selectObj.options[i].text== valueToSet) {
+                selectObj.options[i].selected = true;
+                return;
+            }
+        }
+    }
 
 fetch(apiUrl)
   .then(function(response) {
