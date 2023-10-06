@@ -5,7 +5,9 @@
 //add hover transition that provides limited info
 //not a fan of the ingredient and instruction information from spoonacular and wondering if we should just use the recipe URL
 //the initial title and image, hover transition for additional info like time, servings and cost per serving, then click on a button to go to the link the recipe was taken from. 
-
+//Irania's API key: bc4a9ec066e74abb862f8e5c21ec4f15
+//Nydia's API Key: 1c2767aa27fe422c91f0d1e50285ab87
+//Robert's API Key: 9a57136e6bca455b9771d343ad46c043
 
 var apiKey = '1c2767aa27fe422c91f0d1e50285ab87';
 var protein = '';
@@ -27,19 +29,22 @@ var apiUrl = 'https://api.spoonacular.com/recipes/complexSearch?sort=random&cuis
     var recipeSteps = document.getElementById('recipeSteps');
     var recipeIngredients = document.getElementById('recipeIngredients');
     var backToListButton = document.getElementById('backToListButton');    
+    var searchForm = document.querySelector("form");
+    var searchResultDiv = document.querySelector(".search-result");
     var objSelect = document.getElementById("protein");
 
     //Set selected
-    setSelectedValue(objSelect, "10");
+    setSelectedValue(objSelect);
     
-    function setSelectedValue(selectObj, valueToSet) {
-        for (var i = 0; i < selectObj.options.length; i++) {
-            if (selectObj.options[i].text== valueToSet) {
-                selectObj.options[i].selected = true;
+    function setSelectedValue(protein) {
+        for (var i = 0; i < protein; i++) {
+            if (protein.text== valueToSet) {
+                protein.selected = true;
                 return;
             }
         }
     }
+    console.log(protein);
 
 fetch(apiUrl)
   .then(function(response) {
