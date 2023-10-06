@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-//-Define global variables
-// var cuisine ='';
-// var protein ='';
-// var starch = '';
-// var veggies ='';
-// var mealType ='';
-// var favorite = '';
-// var newRecipe='';
-
-const apiUrl = "https://api.spoonacular.com/recipes/complexSearch?apiKey=9a57136e6bca455b9771d343ad46c043&includeNutrition=true";
-fetch(apiUrl)
-  .then(response => response.json()) // Parse the response as JSON
-  .then(data => {
-    // Log the API response to the console
-    console.log(data);
-  })
-  .catch(error => {
-    console.error("Error fetching data:", error);
-  });
-
-=======
 //need to fix the price to divide by 100
 //only intended to show data and functionality, not format to fit in our actual html
 //need to figure out how to randomize the url query, otherwise the same inputs will always show the same results
@@ -153,7 +131,6 @@ fetch(apiUrl)
     recipeList.style.display = 'flex';
     recipeDetails.style.display = 'none';
   });
->>>>>>> ac88d6676a3777371ea49dd098750835f364eac4
 
 //-Function to make api request including api key
 //	-make fetch request
