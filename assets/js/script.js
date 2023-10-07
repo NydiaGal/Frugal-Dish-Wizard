@@ -44,7 +44,7 @@ fetch(apiUrl)
           
           <div class="card">
             <div class="card-content">
-                <h3>${recipe.title}</h3>
+                <h1 class="larger-title">${recipe.title}</h1>
               <figure class="image">
                   <img class="is-fullwidth" src="${recipe.image}" alt="${recipe.title}">
             </div>
