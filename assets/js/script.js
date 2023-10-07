@@ -45,7 +45,8 @@ fetch(apiUrl)
           <div class="card">
             <div class="card-content">
                 <h3>${recipe.title}</h3>
-                <img src="${recipe.image}" alt="${recipe.title}" style="max-width: 200px;">
+              <figure class="image">
+                  <img class="is-fullwidth" src="${recipe.image}" alt="${recipe.title}">
             </div>
             <button class="viewRecipeButton" data-id="${recipe.id}">View Recipe</button>
             <div class="card-footer">
