@@ -4,7 +4,7 @@
 //added price per serving to recipe list cards
 
 
-var apiKey = ""; //update with your API key Robert: 9a57136e6bca455b9771d343ad46c043 Nydia:1c2767aa27fe422c91f0d1e50285ab87 Parker:77989abd461041e9946863eb14fd2d2c
+var apiKey = "bc4a9ec066e74abb862f8e5c21ec4f15"; //update with your API key Robert: 9a57136e6bca455b9771d343ad46c043 Nydia:1c2767aa27fe422c91f0d1e50285ab87 Parker:77989abd461041e9946863eb14fd2d2c
 var protein = "chicken";
 var cuisine = "Italian"; // this would be populated based on our click event
 var mealType = ""; // this would be populated based on our click event
