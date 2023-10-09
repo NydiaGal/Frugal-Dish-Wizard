@@ -9,7 +9,7 @@
 //Nydia's API Key: 1c2767aa27fe422c91f0d1e50285ab87
 //Robert's API Key: 9a57136e6bca455b9771d343ad46c043
 
-var apiKey = '1c2767aa27fe422c91f0d1e50285ab87';
+var apiKey = 'bc4a9ec066e74abb862f8e5c21ec4f15';
 var protein = '';
 var cuisine = ''; // this would be populated based on our click event
 var mealType = ''; // this would be populated based on our click event
