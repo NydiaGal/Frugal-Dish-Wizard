@@ -1,31 +1,29 @@
-//need to fix the price to divide by 100
-//only intended to show data and functionality, not format to fit in our actual html
-//need to figure out how to randomize the url query, otherwise the same inputs will always show the same results
-//need to change the variables so they are based on selections instead of hard coded
-//add hover transition that provides limited info
-//not a fan of the ingredient and instruction information from spoonacular and wondering if we should just use the recipe URL
-//the initial title and image, hover transition for additional info like time, servings and cost per serving, then click on a button to go to the link the recipe was taken from. 
+//made changes so that query limits to those with 14 ingredients or less
+//and when the view button is selected, the recipe card is displayed.
+//expanded total number of recipes viewed from default of 10 to 40
+//added price per serving to recipe list cards
 
 
-var apiKey = 'bc4a9ec066e74abb862f8e5c21ec4f15';
-var protein = 'chicken';
-var cuisine = 'Italian'; // this would be populated based on our click event
-var mealType = 'Dinner'; // this would be populated based on our click event
-var ingredients = 'chicken,tomato'; // this would be populated based on our click events for protein, starches and veggies
+var apiKey = "bc4a9ec066e74abb862f8e5c21ec4f15"; //update with your API key Robert: 9a57136e6bca455b9771d343ad46c043 Nydia:1c2767aa27fe422c91f0d1e50285ab87 Parker:77989abd461041e9946863eb14fd2d2c
+var protein = "chicken";
+var cuisine = "Italian"; // this would be populated based on our click event
+var mealType = ""; // this would be populated based on our click event
+var ingredients = "pork"; // this would be populated based on our click events for protein, starches, and veggies
 
-var apiUrl = 'https://api.spoonacular.com/recipes/complexSearch?cuisine=' + cuisine + //having trouble entering the random sort may need to use separate random function
-  '&mealType=' + mealType +
-  '&includeIngredients=' + ingredients +
-  '&apiKey=' + apiKey;
+var apiUrl =
+  "https://api.spoonacular.com/recipes/complexSearch?cuisine=" +
+  cuisine +
+  "&mealType=" +
+  mealType +
+  "&includeIngredients=" +
+  ingredients +
+  "&number=40&apiKey=" +
+  apiKey;
 
-  var recipeList = document.getElementById('recipe-list');
-    var recipeDetails = document.getElementById('recipeDetails');
-    var recipeName = document.getElementById('recipeName');
-    var recipeImage = document.getElementById('recipeImage');
-    var recipeInfo = document.getElementById('recipeInfo');
-    var recipeSteps = document.getElementById('recipeSteps');
-    var recipeIngredients = document.getElementById('recipeIngredients');
-    var backToListButton = document.getElementById('backToListButton');
+var recipeList = document.getElementById("recipe-list");
+var recipeDetails = document.getElementById("recipeDetails");
+var recipeName = document.getElementById("recipeName");
+var recipeImage = document.getElementById("recipeImage");
 
 fetch(apiUrl)
   .then(function (response) {
