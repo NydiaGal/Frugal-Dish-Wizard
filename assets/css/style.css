@@ -2,3 +2,26 @@
     font-weight: bold;
   }
   
+  .has-top-margin {
+    margin-top: 25px; 
+  }
+ 
+#menu {
+  text-align: center;
+}
+
+#menu option {
+  text-align: center;
+}
+
+.container {
+  text-align: center; 
+}
+
+.select-container {
+  display: inline-block;
+}
+
+.button.is-danger {
+  margin-top: -10px;
+}

@@ -3,7 +3,6 @@
 //expanded total number of recipes viewed from default of 10 to 40
 //added price per serving to recipe list cards
 
-
 var apiKey = "ed73eb72a1ea4d5a9c2a849c3c578bc2"; //update with your API key Robert: 9a57136e6bca455b9771d343ad46c043 Nydia:1c2767aa27fe422c91f0d1e50285ab87 Parker:77989abd461041e9946863eb14fd2d2c
 var protein = "chicken";
 var cuisine = "Italian"; // this would be populated based on our click event
@@ -80,9 +79,9 @@ fetch(apiUrl)
                         <i class="fa fa-thumbs-o-up"></i>
                     </a>
                 </div>
-                <div class="card-footer-item">
-                    <a href="#" class="button is-danger">
-                        <i class="fa fa-thumbs-o-down"></i>
+            <div class="card-footer-item">
+                <a href="#" class="button is-danger">
+                    <i class="fa fa-thumbs-o-down"></i>
                     </a>
                 </div>
             </div>
