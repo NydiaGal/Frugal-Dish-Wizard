@@ -73,9 +73,9 @@ fetch(apiUrl)
                         <i class="fa fa-thumbs-o-up"></i>
                     </a>
                 </div>
-                <div class="card-footer-item">
-                    <a href="#" class="button is-danger">
-                        <i class="fa fa-thumbs-o-down"></i>
+            <div class="card-footer-item">
+                <a href="#" class="button is-danger">
+                    <i class="fa fa-thumbs-o-down"></i>
                     </a>
                 </div>
             </div>
