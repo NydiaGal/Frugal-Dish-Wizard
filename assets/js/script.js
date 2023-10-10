@@ -84,6 +84,17 @@ fetch(apiUrl)
       }
     });
 
+  const thumbsUp = document.getElementById('fa fa-thumbs-o-up');
+  const likeCountElement = document.getElementById('like-count');
+  let likeCount = 0;
+
+  // Listen for clicks on the like button and increment the like count
+  likeButton.addEventListener('click', () => {
+    likeCount++;
+    likeCountElement.innerText = likeCount;
+  });
+
+
     // Event listeners for each "View Recipe" button
     var viewRecipeButtons = document.querySelectorAll(".viewRecipeButton");
     viewRecipeButtons.forEach(function (button) {
