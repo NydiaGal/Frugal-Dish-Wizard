@@ -9,9 +9,10 @@
 
 var apiKey = '1c2767aa27fe422c91f0d1e50285ab87';
 var protein = 'chicken';
-var cuisine = 'Italian'; // this would be populated based on our click event
+var cuisine = 'Italia'; // this would be populated based on our click event
 var mealType = 'Dinner'; // this would be populated based on our click event
-var ingredients = 'chicken,tomato'; // this would be populated based on our click events for protein, starches and veggies
+var ingredients = 'tomato'; // this would be populated based on our click events for protein, starches and veggies
+var starches = 'rice';
 
 var apiUrl = 'https://api.spoonacular.com/recipes/complexSearch?cuisine=' + cuisine + //having trouble entering the random sort may need to use separate random function
   '&mealType=' + mealType +
@@ -55,9 +56,9 @@ fetch(apiUrl)
                         <i class="fa fa-thumbs-o-up"></i>
                     </a>
                 </div>
-                <div class="card-footer-item">
-                    <a href="#" class="button is-danger">
-                        <i class="fa fa-thumbs-o-down"></i>
+            <div class="card-footer-item">
+                <a href="#" class="button is-danger">
+                    <i class="fa fa-thumbs-o-down"></i>
                     </a>
                 </div>
             </div>

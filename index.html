@@ -40,75 +40,62 @@
 
     <section class="protienselections">
       <div class="protienselections body">
-        <div class="container is-link">
+        <div class="container is-link is-grouped">
+          <div class="columns is-centered">
+            <div class="column is-6">
+            <div class="field">
+              <label class="label has-text-centered">Enter your ingredients:</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="chicken, garlic">
+              </div>
+              <p class="help">type a comma between each ingredient</p>
+            </div>
+
+
           <form>
-            <label for="menu" class="is-size-5">Select a Protein:</label>
-            <select id="menu" class="is-size-5">
-              <option value="Chicken">Chicken</option>
-              <option value="Beef">Beef</option>
-              <option value="Pork">Pork</option>
-              <option value="Fish">Fish</option>
-              <option value="Vegetables">Vegetables</option>
-              <option value="none">None</option>
-              //last value option will take us to the online ordering apps
+            <div class="has-text-centered">
+            <label for="menu" class="is-normal"><strong>Select your Cuisines:</strong></label>
+            <div class="control has-text-centered">
+              <div class="select-container">
+              <div class="column is-6">
+              <select id="menu" class="is-normal" multiple>
+                <option value="African">African</option>
+                <option value="Asian">Asian</option>
+                <option value="American">American</option>
+                <option value="British">British</option>
+                <option value="Cajun">Cajun</option>
+                <option value="Caribbean">Caribbean</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Eastern European">Eastern European</option>
+                <option value="European">European</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Greek">Greek</option>
+                <option value="Indian">Indian</option>
+                <option value="Indian">Indian</option>
+                <option value="Italian">Italian</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Jewish">Jewish</option>
+                <option value="Korean">Korean</option>
+                <option value="Latin American">Latin American</option>
+                <option value="Mediterranean">Mediterranean</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Middle Eastern">Middle Eastern</option>
+                <option value="Nordic">Nordic</option>
+                <option value="Southern">Southern</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Thai">Thai</option>
+                <option value="Vietnamese">Vietnamese</option>
+                <option value="none">None</option>
+                <option value="all">All</option>
             </select>
 
-            <label for="menu" class="is-size-5">Select a Cuisine:</label>
-            <select id="menu" class="is-size-5">
-              <option value="African">African</option>
-              <option value="Asian">Asian</option>
-              <option value="American">American</option>
-              <option value="British">British</option>
-              <option value="Cajun">Cajun</option>
-              <option value="Caribbean">Caribbean</option>
-              <option value="Chinese">Chinese</option>
-              <option value="Eastern European">Eastern European</option>
-              <option value="European">European</option>
-              <option value="French">French</option>
-              <option value="German">German</option>
-              <option value="Greek">Greek</option>
-              <option value="Indian">Indian</option>
-              <option value="Indian">Indian</option>
-              <option value="Italian">Italian</option>
-              <option value="Japanese">Japanese</option>
-              <option value="Jewish">Jewish</option>
-              <option value="Korean">Korean</option>
-              <option value="Latin American">Latin American</option>
-              <option value="Mediterranean">Mediterranean</option>
-              <option value="Mexican">Mexican</option>
-              <option value="Middle Eastern">Middle Eastern</option>
-              <option value="Nordic">Nordic</option>
-              <option value="Southern">Southern</option>
-              <option value="Spanish">Spanish</option>
-              <option value="Thai">Thai</option>
-              <option value="Vietnamese">Vietnamese</option>
-              <option value="none">None</option>
-              //last value option will take us to the online ordering apps
-            </select>
-
-            <label for="menu" class="is-size-5">Select starches:</label>
-            <select id="menu" class="is-size-5">
-              <option value="Chicken">Chicken</option>
-              <option value="Beef">Beef</option>
-              <option value="Pork">Pork</option>
-              <option value="Fish">Fish</option>
-              <option value="Vegetables">Vegetables</option>
-              <option value="None">None</option>
-              <option value="All">All</option>
-            </select>
-
-            <label for="menu" class="is-size-5">Select veggies:</label>
-            <select id="menu" class="is-size-5">
-              <option value="Chicken">Chicken</option>
-              <option value="Beef">Beef</option>
-              <option value="Pork">Pork</option>
-              <option value="Fish">Fish</option>
-              <option value="Vegetables">Vegetables</option>
-              <option value="Eat Out">Online Ordering</option>
-              <option value="none">None</option>
-              <option value="none">None</option>
-            </select>
-            <button class="button is-link is-small">Button</button>
+        <div class="container">
+              <div class="columns is-centered">
+                <button class="button is-link is-fullwidth has-top-margin" style="margin-left: 60px;">Submit</button>
+              </div>
+            </div>
+        
           </form>
         </div>
       </div>
@@ -136,6 +123,7 @@
         </div>
       </div>
     </div>
+
     
     <!-- <div class="card-footer">
         <div class="card-footer-detail">
