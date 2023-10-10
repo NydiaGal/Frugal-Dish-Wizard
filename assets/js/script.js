@@ -4,21 +4,21 @@
 //added price per serving to recipe list cards
 
 var apiKey = "ed73eb72a1ea4d5a9c2a849c3c578bc2"; //update with your API key Robert: 9a57136e6bca455b9771d343ad46c043 Nydia:1c2767aa27fe422c91f0d1e50285ab87 Parker:77989abd461041e9946863eb14fd2d2c
-var protein = "";
 var cuisine = ""; // this would be populated based on our click event
-var mealType = ""; // this would be populated based on our click event
 var ingredients = ""; // this would be populated based on our click events for protein, starches, and veggies
 
 
 var apiUrl =
   "https://api.spoonacular.com/recipes/complexSearch?cuisine=" +
   cuisine +
-  "&mealType=" +
-  mealType +
+  //"&mealType=" +
+  //mealType +
   "&includeIngredients=" +
   ingredients +
   "&number=40&apiKey=" +
   apiKey;
+
+
 
 var recipeList = document.getElementById("recipe-list");
 var recipeDetails = document.getElementById("recipeDetails");
